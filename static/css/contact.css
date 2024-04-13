@@ -11,9 +11,21 @@
   padding: 20px 60px 30px 40px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
+.btn-contact {
+  background-color: var(--gradient-2);
+  background-size: 200%;
+  color: var(--white);
+  padding: 12px 35px;
+  font-size: var(--fs-8);
+  font-weight: var(--fw-500);
+  border-radius: 15px;
+  transition: var(--transition-2);
+}
+
+.btn-contact:is(:hover, :focus) { background-position: right; }
 body{
   position: absolute;
-  height: 150%!important;
+  height: 180%!important;
 }
 .footer{
   position: absolute;

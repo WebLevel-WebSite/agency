@@ -8,10 +8,6 @@ Python 3.6 or newer required.
 import os
 from flask import Flask, redirect, request, session, jsonify, render_template
 
-import stripe
-# This is your test secret API key.
-stripe.api_key = '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'
-
 app = Flask(__name__,
             static_url_path='',
             static_folder='static',
