@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block title %}WebLevel - Get Best UI Design{% endblock %}
+
+{% block additional_head %}
+    <!-- Ajoutez ici les éléments supplémentaires du head pour cette page spécifique -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/contact.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="container-contact">
+    <div class="content">
+      <div class="left-side">
+        <div class="address details">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="topic">Addresse</div>
+          <div class="text-one">Paris - Chamonix</div>
+          <div class="text-two"></div>
+        </div>
+        <div class="phone details">
+          <i class="fas fa-phone-alt"></i>
+          <div class="topic">Tel</div>
+          <div class="text-one">+33 6 49 22 14 47</div>
+          <div class="text-two"></div>
+        </div>
+        <div class="email details">
+          <i class="fas fa-envelope"></i>
+          <div class="topic">Email</div>
+          <div class="text-one">reedwilliamjames@gmail.com</div>
+          <div class="text-two"></div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="topic-text">
+          Envoyez-nous un message</div>
+          <p>Si vous avez un travail pour moi ou des questions de tout type liées à mon tutoriel, vous pouvez m'envoyer un message d'ici. C'est un plaisir de vous aider.</p>
+          <form action="#">
+            <div class="input-box">
+              <input type="text" placeholder="Entrez votre nom">
+            </div>
+            <div class="input-box">
+              <input type="text" placeholder="Entrez votre email">
+            </div>
+            <div class="input-box message-box">
+              <input type="text" placeholder="Votre message">
+            </div>
+            <div class="button">
+              <input type="submit" value="Envoyer maintenant">
+            </div>
+          </form>
+    </div>
+    </div>
+  </div>
+{% endblock %}
