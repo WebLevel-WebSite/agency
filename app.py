@@ -9,7 +9,7 @@ import os
 from flask import Flask, redirect, request, session, jsonify, render_template
 
 app = Flask(__name__,
-            static_url_path='',
+            static_url_path='/media',
             static_folder='static',
             template_folder='templates')
 app.secret_key = 'your_secret_key'  # Change this to a secure key for security
@@ -27,13 +27,9 @@ def HOME():
 def web():
     return render_template('site-web.html')
 
-@app.route('/prestations-web')
-def prestation1():
-    return render_template('prestations-web.html')
-
-@app.route('/prestations-graphiques')
-def prestation2():
-    return render_template('prestations-graphiques.html')
+@app.route('/expertises')
+def expertises():
+    return render_template('expertises.html')
 
 @app.route('/projets')
 def projets():
@@ -42,6 +38,20 @@ def projets():
 @app.route('/contact')
 def contact():
     return render_template('contact.html')
+
+@app.route('/blog')
+def blog():
+    return render_template('blog.html')
+
+@app.route('/mentions-legales')
+def mentions():
+    return render_template('mentions-legales.html')
+@app.route('/cgu')
+def cgu():
+    return render_template('cgu.html')
+@app.route('/cgv')
+def cgv():
+    return render_template('cgv.html')
 
 if __name__ == '__main__':
     app.run(port=4242)

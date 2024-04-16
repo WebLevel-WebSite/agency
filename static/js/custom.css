@@ -1,0 +1,7 @@
+.hero {
+    background-image: url('/static/site/hero-bg.png');
+}
+
+body {
+    background-color: red !important;
+}
