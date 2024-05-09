@@ -43,6 +43,28 @@ def contact():
 def blog():
     return render_template('blog.html')
 
+
+
+#+++++++++++++++++++++++++++++ BLOG ++++++++++++++++++++++++++++++++++
+@app.route('/blog//shopify-comment-et-pourquoi-l-utiliser')
+def shopify():
+    return render_template('/blog/shopify-comment-et-pourquoi-l-utiliser.html')
+
+@app.route('/blog/15-termes-a-connaitre-dans-le-developpement-web')
+def dev():
+    return render_template('/blog/15-termes-a-connaitre-dans-le-developpement-web.html')
+
+@app.route('/blog/qu-est-ce-qu-une-agence-web-digitale')
+def webdev():
+    return render_template('/blog/qu-est-ce-qu-une-agence-web-digitale.html')
+
+@app.route('/blog/creer-un-site-wordpress-les-indispensables')
+def word():
+    return render_template('/blog/creer-un-site-wordpress-les-indispensables.html')
+
+
+#+++++++++++++++++++++++++++++ CONDITION ET ERROR ++++++++++++++++++++++++++++++++++
+
 @app.route('/mentions-legales')
 def mentions():
     return render_template('mentions-legales.html')
@@ -52,7 +74,6 @@ def cgu():
 @app.route('/cgv')
 def cgv():
     return render_template('cgv.html')
-
 @app.errorhandler(404)
 def page_not_found(error):
     return render_template('404.html'), 404
