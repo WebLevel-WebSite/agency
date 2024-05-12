@@ -62,7 +62,17 @@ def webdev():
 def word():
     return render_template('/blog/creer-un-site-wordpress-les-indispensables.html')
 
+#+++++++++++++++++++++++++++++ PROJETS ++++++++++++++++++++++++++++++++++
+@app.route('/projets/dropout')
+def dropout():
+    return render_template('projets/drp.html')
 
+@app.route('/projets/atalprestigevtc/')
+def atal():
+    return render_template('projets/atal.html')
+@app.route('/projets/fabcabvtc/')
+def  fabcab():
+    return render_template('projets/fabcabvtc.html')
 #+++++++++++++++++++++++++++++ CONDITION ET ERROR ++++++++++++++++++++++++++++++++++
 
 @app.route('/mentions-legales')
